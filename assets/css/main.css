@@ -1572,12 +1572,15 @@ input, select, textarea {
 		.image h2 {
     		position: absolute;
     		top: 30%;
+            font-size: 1em;
     		opacity:0;
 		}
 		
 		.image h3 {
     		position: absolute;
     		top: 50%;
+    		line-height: 1em;
+    		font-size: 0.7em;
     		opacity:0;
 		}
 		
