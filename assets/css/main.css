@@ -2024,13 +2024,13 @@ input, select, textarea {
     			transition: opacity 0.25s ease-in-out;
     			margin-bottom: 0;
     			position: relative;
-    			padding: 2.5em 2.5em 2.5em 2.5em;
+    			padding: 1.5em 2.5em 2.5em 2.5em;
     			width: 100%;
                 }
                                 
                 #main > .panel.intro banner {
     				padding: 0em 0em 0em 0em;
-    				height: 15em;
+    				height: 17em;
     				display: -moz-flex;
     				display: -webkit-flex;
     				display: -ms-flex;
@@ -2056,7 +2056,7 @@ input, select, textarea {
 					-webkit-flex-shrink: 0;
 					-ms-flex-shrink: 0;
 					flex-shrink: 0;
-					width: 17em;
+					width: 16em;
 					height: 100%;
 				}
 
