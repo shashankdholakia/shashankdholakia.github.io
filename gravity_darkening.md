@@ -1,6 +1,6 @@
 ---
 title: Gravity Darkening
-layout: default
+layout: page
 id: gdark
 ---
 ## {{ page.title }}

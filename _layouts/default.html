@@ -22,20 +22,75 @@
 
 					<nav id="nav">
 						<a href="../#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="../#work/" class="icon solid fa-chart-bar"><span>Research</span></a>
-						<a href="../#aboutme/" class="icon solid fa-user"><span>About me</span></a>
+						<a href="../#work" class="icon solid fa-chart-bar"><span>Research</span></a>
+						<a href="../#aboutme" class="icon solid fa-user"><span>About me</span></a>
+                        <a href="../#contact" class="icon solid fa-envelope"><span>Contact me</span></a>
 						<a href="https://twitter.com/AstroShashank" class="icon brands fa-twitter"><span>Twitter</span></a>
 					</nav>
 				<!-- Main -->
 					<div id="main">
-
-
-
-							<article id={{ page.id }}, class="panel">
-								
-                                {{ content }}
-
+					
+						<!-- Me -->
+							<article id="home" class="panel intro">
+    							<banner>
+               						<header>
+           								<h1>Shashank Dholakia</h1>
+        								<p>Astronomer </p>
+        							</header>
+        							<a href="#work" class="jumplink pic">
+        								<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+        								<img src="images/shashank.png" alt="" />
+        							</a>
+        						</banner>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+    										<div class="image fit">
+    											<img src="images/gdark.png" alt="">
+    											<a href="../gravity_darkening">
+        											<h2>Gravity Darkening</h2>
+        											<h3>Fast transit models for <br>
+        											rapidly rotating stars</h3>
+    											</a>
+    										</div>
+										</div>
+										
+										<div class="col-4 col-6-medium col-12-small">
+    										<div class="image fit">
+    											<img src="images/gap.png" alt="">
+    											<a href="../gap">
+        											<h2>Long period planets</h2>
+        											<h3>Constraining periods for planets <br>
+        											observed multiply in K2/TESS</h3>
+    											</a>
+    										</div>
+										</div>
+										
+										<div class="col-4 col-6-medium col-12-small">
+    										<div class="image fit">
+    											<img src="images/m35.jpg" alt="">
+    											<a href="../k2c0planet">
+        											<h2>Planets around hot stars</h2>
+        											<h3>and looking for planets in clusters</h3>
+    											</a>
+    										</div>
+										</div>
+									</div>
+								</section>
 							</article>
+							
+                            {% for navpage in site.navpages %}
+                            <article id={{ navpage.idname }} class="panel">
+                    			<header>
+									<h2>{{ navpage.title }}</h2>
+								</header>
+								<p>{{ navpage.content }}</p>
+                            </article>
+
+                            {% endfor %}
+
+
+							
 
 					</div>
 

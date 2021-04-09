@@ -1,6 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+# The site layout is specified in _layout/default.html; no info is needed here
 
-layout: home
+layout: default
 ---
