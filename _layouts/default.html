@@ -43,48 +43,30 @@
         							</a>
         						</banner>
 								<section>
+								
 									<div class="row">
+									{% assign portfolio = site.portfolio | sort: 'weight' | reverse %}
+    								{% for item in portfolio %}
 										<div class="col-4 col-6-medium col-12-small">
     										<div class="image fit">
-    											<img src="images/gdark.png" alt="">
-    											<a href="../gravity_darkening">
-        											<h2>Gravity Darkening</h2>
-        											<h3>Fast transit models for <br>
-        											rapidly rotating stars</h3>
+    											<img src="{{ item.image }}" alt="">
+    											<a href="../{{ item.url }}">
+        											<h2>{{ item.title }}</h2>
+        											<h3>{{ item.subtitle }}</h3>
     											</a>
     										</div>
 										</div>
-										
-										<div class="col-4 col-6-medium col-12-small">
-    										<div class="image fit">
-    											<img src="images/gap.png" alt="">
-    											<a href="../gap">
-        											<h2>Long period planets</h2>
-        											<h3>Constraining periods for planets <br>
-        											observed multiply in K2/TESS</h3>
-    											</a>
-    										</div>
-										</div>
-										
-										<div class="col-4 col-6-medium col-12-small">
-    										<div class="image fit">
-    											<img src="images/m35.jpg" alt="">
-    											<a href="../k2c0planet">
-        											<h2>Planets around hot stars</h2>
-        											<h3>and looking for planets in clusters</h3>
-    											</a>
-    										</div>
-										</div>
+    								{% endfor %}
 									</div>
 								</section>
 							</article>
 							
                             {% for navpage in site.navpages %}
-                            <article id={{ navpage.idname }} class="panel">
+                            <article id="{{ navpage.idname }}" class="panel">
                     			<header>
 									<h2>{{ navpage.title }}</h2>
 								</header>
-								<p>{{ navpage.content }}</p>
+								{{ navpage.content }}
                             </article>
 
                             {% endfor %}

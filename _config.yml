@@ -38,6 +38,10 @@ collections:
     navpages:
         output: false
         permalink: "/navpage/:path"
+    portfolio:
+        sort_by: weight
+        output: true
+        permalink: "/portfolio/:path"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
