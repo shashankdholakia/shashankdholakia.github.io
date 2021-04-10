@@ -10,6 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
+        <!-- Load KaTeX -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
     {% if site.google_analytics and jekyll.environment == 'production' %}
     {% include analytics.html %}
@@ -71,9 +75,6 @@
 
                             {% endfor %}
 
-
-							
-
 					</div>
 
 				<!-- Footer -->
@@ -91,6 +92,24 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+			
+
 
 	</body>
+    <footer>
+            <!-- Parse the Latex divs with Katex-->
+            <script type="text/javascript">
+              $("script[type='math/tex']").replaceWith(
+                function(){
+                  var tex = $(this).text();
+                  return katex.renderToString(tex, {displayMode: false});
+              });
+              
+              $("script[type='math/tex; mode=display']").replaceWith(
+                function(){
+                  var tex = $(this).text();
+                  return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+              });
+            </script>
+    </footer> 
 </html>

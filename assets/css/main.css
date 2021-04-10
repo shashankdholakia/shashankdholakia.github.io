@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
 @import url("fontawesome-all.min.css");
 
 /*
@@ -1363,24 +1364,32 @@ input, select, textarea {
 			}
 
 		}
-
-	strong, b, h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
-		color: #363636;
+    
+	h1, h2, h3, h4, h5, h6 {
+    	font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 300;
+		color: #363636 ; 
+	}
+	
+	strong, b {
+    	font-weight: 400;
 	}
 
 	h1 {
 		font-size: 2.4em;
+		font-weight: 400;
 		letter-spacing: -0.015em;
 	}
 
 	h2 {
 		font-size: 1.8em;
+		line-height: 2em;
 		letter-spacing: -0.015em;
 	}
 
 	h3, h4, h5, h6 {
 		font-size: 1.25em;
+		line-height: 2em;
 		letter-spacing: -0.015em;
 	}
 
@@ -1559,12 +1568,13 @@ input, select, textarea {
 		
         .image:hover img {
             -webkit-filter: blur(2px); /* Chrome, Safari, Opera */
-            filter: blur(2px) brightness(50%);
+            -webkit-transition: all 0.5s ease-in-out;
+            filter: blur(2px) opacity(20%);
         }
 		
 		.image :not(img) {
 			z-index: 1;
-			color:#fff;
+			color:#000;
 			text-align:center;
 			width:100%;
         }
@@ -1585,6 +1595,7 @@ input, select, textarea {
 		}
 		
 		.image:hover :not(img) {
+    		-webkit-transition: all 0.5s ease-in-out;
     		opacity:1;
 		}
 
