@@ -5,4 +5,7 @@ idname: contact
 ---
 
 You can email me at: <br>
-![my first name dot my last name at my institution dot edu](images/contact.png)
+
+<p align="left"><img src="../images/contact.png" width="50%" />
+</p>
+
