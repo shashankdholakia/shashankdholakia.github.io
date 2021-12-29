@@ -3,10 +3,19 @@ This is the repository for my personal website [shashankdholakia.github.io](http
 ## How to update the website:
 
 
-
 This documentation is mostly so I can remember how to update my own website after some time.
 
 I have modified the Astral theme from HTML5up to use jekyll. This means that I can add content to the website in the form of markdown documents without formatting, and the code in /_layouts/ will format the document into a post in html.
+
+### When making and posting any changes to the website:
+
+Jekyll has a way to locally "compile" changes to view how the site looks before updating the website itself. To view the site locally, cd to the directory of the repo and type in a terminal:
+
+```
+bundle exec jekyll serve --watch
+```
+
+Then, go to http://localhost:4000/ in any browser. When ready to update the website, push the changes to github. 
 
 There are two locations where I can currently add/update a post.
 
