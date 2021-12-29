@@ -1921,7 +1921,7 @@ input, select, textarea {
 		width: 45em;
 		margin: 0 auto;
 		min-height: 100vh;
-		max-width: 100%;
+		max-width: 80%;
 		padding: 4em 0;
 		display: -moz-flex;
 		display: -webkit-flex;
