@@ -1311,7 +1311,7 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 		width: 100vw;
         height: 100vh;
-		/* background-size: auto, cover; */
+		background-size: cover;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
