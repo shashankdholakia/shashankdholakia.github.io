@@ -56,3 +56,32 @@ layout: page
 ```
 
 The quotes around the title and subtitle are important to ensure that you can use html formatting, like the line break <br>. The weight tag sets how far up the thumbnail appears on the website--a higher number means the thumbnail will be more recent (so the oldest post should be set to 1). The image tag should be the path to the thumbnail image, which ought to be in the images folder.
+
+### Blog:
+  
+As of Dec 2021, I have updated the website to include a blog. The blog is quite rudimentary so far and might change. These are the steps to creating a new blog post:
+  
+1. Create a file called YEAR-MONTH-DAY-title.markdown in the _posts directory. The yml front matter (top lines in the doc) should read:
+  ```
+  ---
+layout: post
+title:  ENTER TITLE HERE
+date:   YEAR-MONTH-DAY HH:MM:SS -0800
+categories: <any category tags>
+---
+  ```
+2. Write the post in the same way as a portfolio page. The post will show up under the 'blog' tab of the website. By default, the excerpt will be the first paragraph of the post. To customize this, add this to the front matter of the markdown file for the post:
+  
+```
+  excerpt_separator: <!--more-->
+```
+then, use <!--more--> within the post to deliniate where the excerpt should end.
+  
+
+### Adding images to posts and pages:
+The standard way of adding an image is to write in the markdown file:
+```
+  <p align="center"><img src="{{ site.baseurl }}path/to/image.jpg" width="70%"/></p>
+```
+The alignment and width can change. In general, images should be within the images folder in the root directory, and for posts with multiple images a subfolder containing all images for that post is recommended. In addition, images should be resized down to a few megapixels in Photoshop or similar to speed the website loading.
+ 
