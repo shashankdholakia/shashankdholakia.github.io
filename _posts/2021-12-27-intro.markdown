@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Hello world"
+date:   2021-12-27 -0800
+categories: intro
+---
+
+Hello everyone! This is the intro post for my blog, which I intend to use for semi regular research updates, musings, and side projects which I always seem to be working on. For my main research projects, check out the research porfolio on my [home page](https://shashankdholakia.github.io).
