@@ -7,8 +7,6 @@ categories: JWST
 excerpt_separator: <!--more-->
 ---
 
-### The launch
-
 I've been very excited for the launch of the James Webb Space Telescope (JWST) for a long time. So long, in fact, that I've had a JWST poster up in my bedroom since about 2012 or 2013, when I was 12 years old.
 
 <!--more-->
@@ -19,7 +17,7 @@ In addition, when I was in middle and high school I was enthusiastic about scien
 
 I came away wanting something more tangible to commemmorate the occasion--something I could point to and say: "Look, this is the process by which JWST will unfurl in all its complexity." My idea was to make a 3d model of JWST, complete with at least some of the folding structures. I had a 3d printer, which I've still been learning how to use. So I hopped on thingiverse and found [this model](https://www.thingiverse.com/thing:4620297/files), which seemed perfect.
 
-### Build process
+## Build process
 
 I initially wanted to finish the project by JWST's first deployment, but true to the real life version, it underwent several delays. I totally underestimated the difficulty of assembling various 3d printed parts into the finished structure. The first step was to print out the 19 hexagonal mirror supports:
 
@@ -45,7 +43,7 @@ The last stage was gluing the mirror panels on, one at a time. It was at this po
 
 <p align="center"><img src="{{ site.baseurl }}/images/jwst_model/mirrors_partial.jpg" width="70%"/></p>
 
-### The finished model!
+## The finished model!
 
 The last step of the process was to glue the secondary mirror, also gold-paper coated, to the secondary structure. Here's the finished model:
 
