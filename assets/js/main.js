@@ -36,8 +36,8 @@
 				var href = $(this).attr('href');
 
 				// Not a panel link? Bail.
-					if (href.charAt(0) != '#'
-					||	$panels.filter(href).length == 0)
+					 if (href.includes('#')
+					 ||	$panels.filter(href).length == 0)
 						return;
 
 				// Prevent default.
@@ -66,6 +66,7 @@
 					}
 
 				// No panel/link? Default to first.
+
 					if (!$panel
 					||	$panel.length == 0) {
 
@@ -78,10 +79,9 @@
 					$panels.not($panel)
 						.addClass('inactive')
 						.hide();
-
 				// Activate link.
-					$link
-						.addClass('active');
+				//		$link
+				//		.addClass('active'); //I have commented this part out so the home tab isn't always active on pages and blogs
 
 				// Reset scroll.
 					$window.scrollTop(0);
@@ -117,10 +117,10 @@
 					$panels.addClass('inactive');
 
 				// Deactivate all links.
-					$nav_links.removeClass('active');
+				// $nav_links.removeClass('active');
 
 				// Activate target link.
-					$link.addClass('active');
+				// $link.addClass('active');
 
 				// Set max/min height.
 					$main

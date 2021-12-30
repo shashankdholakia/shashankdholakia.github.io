@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article id="home" class="panel intro">
+<banner>
+        <header>
+        <h1>Shashank Dholakia</h1>
+      <p>Astronomer </p>
+    </header>
+    <a href="#work" class="jumplink pic">
+      <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+      <img src="images/shashank.png" alt="" />
+    </a>
+  </banner>
+<section>
+
+<div class="row">
+{% assign portfolio = site.portfolio | sort: 'weight' | reverse %}
+  {% for item in portfolio %}
+  <div class="col-4 col-6-medium col-12-small">
+      <div class="image fit">
+        <img src="{{ item.image }}" alt="">
+        <a href="{{ site.url }}{{ item.url }}">
+            <h2>{{ item.title }}</h2>
+            <h3>{{ item.subtitle }}</h3>
+        </a>
+      </div>
+  </div>
+  {% endfor %}
+</div>
+</section>
+</article>

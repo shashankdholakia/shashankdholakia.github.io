@@ -1,0 +1,27 @@
+---
+layout: page
+---
+<div id="timeline_container">
+	<div id="timeline"></div>
+	<div id="events_container">
+
+		{% assign sortedEvents = site.timeline | sort: 'date' | reverse %}
+		{% assign timelineYear = 3000 %}
+		<!-- One individual Event-->
+			{% for event in sortedEvents %}
+			{% if event.year < timelineYear %}
+				<div class="year_marker">{{ event.year }}</div>
+				{% assign timelineYear = event.year %}
+			{% endif %}
+			<div class="timeline_event">
+				<div class="event_marker"></div>
+				<div class="event_information">
+					<h1 class="event_title">{{ event.name }}</h1>
+					<div class="icon solid fa-{{ event.icon_name }}" style="color:cadetblue;">    {{ event.type }}</div>
+					{{ event.content }}
+				</div>
+			</div>
+		{% endfor %}
+		<!---->
+			</div>
+		</div>

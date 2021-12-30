@@ -9,12 +9,12 @@
 		<title>{{ page.title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
         <!-- Load KaTeX -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
 
-		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="{{ site.url }}/assets/css/noscript.css" /></noscript>
     {% if site.google_analytics and jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
@@ -25,50 +25,24 @@
 			<div id="wrapper">
 
 					<nav id="nav">
-						<a href="../#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="../#work" class="icon solid fa-chart-bar"><span>Research</span></a>
-						<a href="../#aboutme" class="icon solid fa-user"><span>About me</span></a>
-                        <a href="../#contact" class="icon solid fa-envelope"><span>Contact me</span></a>
-						<a href="https://twitter.com/AstroShashank" class="icon brands fa-twitter"><span>Twitter</span></a>
+						<a href="/#" class="icon solid fa-home {% if page.layout == 'post' %} inactive {% elsif page.layout == 'page' %} active {% endif %}"><span>Home</span></a>
+						<a href="/#work" class="icon solid fa-chart-bar"><span>Research</span></a>
+						<a href="/#aboutme" class="icon solid fa-user"><span>About me</span></a>
+            <a href="/#contact" class="icon solid fa-envelope"><span>Contact me</span></a>
+						<!-- <a href="https://twitter.com/AstroShashank" class="icon brands fa-twitter"><span>Twitter</span></a> -->
+						<a href="/#blog" class="icon solid fa-blog {% if page.layout == 'post' %} active {% else %} inactive {% endif %}"><span>Blog</span></a>
 					</nav>
 				<!-- Main -->
 					<div id="main">
-					
+
 						<!-- Me -->
-							<article id="home" class="panel intro">
-    							<banner>
-               						<header>
-           								<h1>Shashank Dholakia</h1>
-        								<p>Astronomer </p>
-        							</header>
-        							<a href="#work" class="jumplink pic">
-        								<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-        								<img src="images/shashank.png" alt="" />
-        							</a>
-        						</banner>
-								<section>
-								
-									<div class="row">
-									{% assign portfolio = site.portfolio | sort: 'weight' | reverse %}
-    								{% for item in portfolio %}
-										<div class="col-4 col-6-medium col-12-small">
-    										<div class="image fit">
-    											<img src="{{ item.image }}" alt="">
-    											<a href="..{{ item.url }}">
-        											<h2>{{ item.title }}</h2>
-        											<h3>{{ item.subtitle }}</h3>
-    											</a>
-    										</div>
-										</div>
-    								{% endfor %}
-									</div>
-								</section>
-							</article>
-							
+
+								{{ content }}
+
                             {% for navpage in site.navpages %}
                             <article id="{{ navpage.idname }}" class="panel">
                     			<header>
-									<h2>{{ navpage.title }}</h2>
+									<h1>{{ navpage.title }}</h1>
 								</header>
 								{{ navpage.content }}
                             </article>
@@ -87,12 +61,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
-			
+			<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+			<script src="{{ site.url }}/assets/js/browser.min.js"></script>
+			<script src="{{ site.url }}/assets/js/timeline_height.js"></script>
+			<script src="{{ site.url }}/assets/js/breakpoints.min.js"></script>
+			<script src="{{ site.url }}/assets/js/util.js"></script>
+			<script src="{{ site.url }}/assets/js/main.js"></script>
+
 
 
 	</body>
@@ -104,12 +79,12 @@
                   var tex = $(this).text();
                   return katex.renderToString(tex, {displayMode: false});
               });
-              
+
               $("script[type='math/tex; mode=display']").replaceWith(
                 function(){
                   var tex = $(this).text();
                   return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
               });
             </script>
-    </footer> 
+    </footer>
 </html>
