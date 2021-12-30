@@ -1454,6 +1454,11 @@ input, select, textarea {
 		width: 100%;
 	}
 
+	table.center {
+  margin-left: auto;
+  margin-right: auto;
+	}
+
 		table.default tbody tr {
 			border-bottom: solid 1px #f4f4f4;
 		}

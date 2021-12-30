@@ -10,3 +10,7 @@ in new ways to characterize exoplanet systems in detail.
 Currently I am interested in hot stars with exoplanets,
 which exhibit a variety of effects such as gravity darkening,
 oblateness and pulsations, which can all be used to learn more about exoplanets around these stars.
+
+
+
+<input type="button" onclick="location.href='{{ site.baseurl }}/images/sd_cv.pdf';" value="Download my CV">
