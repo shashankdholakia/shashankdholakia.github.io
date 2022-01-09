@@ -3,7 +3,7 @@
 layout: post
 title:  "A foldable model of JWST"
 date:   2021-12-28 07:56:14 -0800
-categories: JWST
+categories: [builds, JWST]
 excerpt_separator: <!--more-->
 ---
 
