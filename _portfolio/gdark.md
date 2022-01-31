@@ -5,7 +5,7 @@ subtitle: "Fast transit models for <br> rapidly rotating stars"
 image: "images/gdark.png"
 layout: page
 ---
-This is an ongoing project with a paper in prep and the code being developed on Github [here](https://github.com/shashankdholakia/gravity-dark).
+This is an ongoing project with a [paper in review](https://arxiv.org/abs/2109.03250) and the code being developed on Github [here](https://github.com/shashankdholakia/gravity-dark).
 
 <p align="center"><img src="../images/gdark.png" width="25%" /></p>
 
@@ -23,21 +23,13 @@ The orbits of all 8 planets in our Solar System are nearly fully aligned with th
 
 ### What I did: fast, gravity-darkened & oblate transit models in starry
 
-<p align="center"><img src="../images/wasp33.gif" width="25%" /></p>
+<p align="center"><img src="../images/wasp33.gif" width="80%" /></p>
+
+
 
 I decided to extend the code package starry [Luger et al. 2019](https://ui.adsabs.harvard.edu/abs/2019AJ....157...64L/abstract) to take into account both effects in rapidly rotating stars--gravity darkening and oblateness. The goal was to make a transit model for these systems than can be used to fit data with techniques such as Bayesian MCMC (or other forms of posterior inference). Currently, the method of transit-based spin-orbit measurement relies on fitting transits with visible asymmetries with transit models that are very computationally expensive to generate. If I could speed up the model by several orders of magnitude, it would allow constraints to be made on a broad sample of transits of rapidly rotating stars, with or without asymmetry. 
 
 The code package starry was ideally suited for creating a fast transit model. Firstly, modeling gravity darkening in starry is very easy and very fast. Modeling oblateness is significantly more challenging mathematically, but after several months of effort, we finally found a way that is significantly faster than existing implementations. 
-
-### Gravity darkening
-
-
-
-### Oblateness
-
-
-
-
 
 ### Why are hot stars so interesting?
 
@@ -45,11 +37,4 @@ After my [first foray into exoplanets orbiting around hot stars](https://shashan
 
 After taking a stellar astrophysics course, I learned that hot stars are extremely exciting stars to study. A-type stars are at the perfect temperature where radiation transports heat throughout the entire star and they have little, if any, convection. The lack of charged plasma roiling around these stars has a major consequence--they lack a magnetic dynamo to produce a strong magnetic field. Magnetism is a scary term to many astrophysicists--magnetic fields are hard to observe and can do very [strange things in planetary systems and stars alike](https://ui.adsabs.harvard.edu/abs/2010ApJ...718L.145W/abstract). Having the opportunity to study stars and planets absent any magnetic effects is very important to understand what role magnetic fields play in systems that do have them. 
 
-The lack of magnetic fields has another exciting consequence. After accumulating gas from its parent nebula and collapsing into a dense object undergoing fusion, stars are born spinning fast. All else remaining the same, stars would continue to rotate extremely quickly for the rest of their lives. However, most stars with magnetic fields run into magnetic friction from the surrounding nebula and slow down over time. Hot stars, specifically those of spectral type A-F, can rotate at close to their breakup velocity for much of their lives. 
-
-
-
-
-
-
-
+The lack of magnetic fields has another exciting consequence. After accumulating gas from its parent nebula and collapsing into a dense object undergoing fusion, stars are born spinning fast. All else remaining the same, stars would continue to rotate extremely quickly for the rest of their lives. However, most stars with magnetic fields run into magnetic friction from the surrounding nebula and slow down over time. Hot stars, specifically those of spectral type A-F, can rotate at close to their breakup velocity for much of their lives.
