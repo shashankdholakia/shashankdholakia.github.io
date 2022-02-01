@@ -31,7 +31,7 @@ github_username:  shashankdholakia
 # Build settings
 theme: minima
 
-
+google_analytics: "UA-194045185-1"
 plugins:
   - jekyll-feed
 
