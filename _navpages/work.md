@@ -4,6 +4,7 @@ layout: page
 idname: work
 ---
 
+
 My research broadly focuses on exoplanets and their host stars.
 I like to use techniques such as photometry, spectroscopy and polarimetry
 in new ways to characterize exoplanet systems in detail.

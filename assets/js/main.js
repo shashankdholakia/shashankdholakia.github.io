@@ -163,6 +163,14 @@
 
 							}, (breakpoints.active('small') ? 0 : 500));
 
+							setTimeout(() => {
+
+								// Adjust timeline display height
+									offsetDiff();
+									adjustTimelineHeight();
+
+							}, 200);
+							
 					}, 250);
 
 			});
