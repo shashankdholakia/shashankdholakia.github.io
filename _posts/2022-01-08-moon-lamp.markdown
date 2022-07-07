@@ -40,4 +40,3 @@ Finally, I soldered together the components (all of which I also had lying aroun
 <p align="center">
   <img src="{{ site.baseurl }}/images/moon_lamp/off.jpg" width="100%"/>
 	<img src="{{ site.baseurl }}/images/moon_lamp/on.jpg" width="100%"/></p>
-

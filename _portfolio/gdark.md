@@ -5,7 +5,7 @@ subtitle: "Fast transit models for <br> rapidly rotating stars"
 image: "images/gdark.png"
 layout: page
 ---
-This is an ongoing project with a [paper in review](https://arxiv.org/abs/2109.03250) and the code being developed on Github [here](https://github.com/shashankdholakia/gravity-dark).
+This is an ongoing project with a [paper published](https://iopscience.iop.org/article/10.3847/1538-4357/ac33aa) and the code being developed on Github [here](https://github.com/shashankdholakia/gravity-dark).
 
 <p align="center"><img src="../images/gdark.png" width="25%" /></p>
 
