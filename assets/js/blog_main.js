@@ -24,14 +24,14 @@
 		});
 
 	// Nav.
-		$nav_links
+		 $nav_links
 			.on('click', function(event) {
 
 				var href = $(this).attr('href');
 
 				// Not a panel link? Bail.
 
-					if (href.charAt(0) != '#'){
+					if (href.charAt(1) != '#'){
 						return;
 					}
 
@@ -68,7 +68,7 @@
 					||	$panel.length == 0) {
 
 						$panel = $panels.first();
-						$link = $nav_links.first();
+						// $link = $nav_links.first();
 
 					}
 
@@ -78,8 +78,8 @@
 						.hide();
 
 				// Activate link.
-					$link
-						.addClass('active');
+				//	$link
+				//		.addClass('active');
 
 				// Reset scroll.
 					$window.scrollTop(0);
@@ -116,12 +116,12 @@
 
 
 				// Deactivate all links.
-					$nav_links.removeClass('active');
-					$nav_links.removeClass('active_no_arrow');
+				//	$nav_links.removeClass('active');
+				//	$nav_links.removeClass('active_no_arrow');
 
 
 				// Activate target link.
-					$link.addClass('active');
+				//	$link.addClass('active');
 
 
 				// Set max/min height.

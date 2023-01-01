@@ -9,12 +9,12 @@
 		<title>{{ page.title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
         <!-- Load KaTeX -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
 
-		<noscript><link rel="stylesheet" href="{{ site.url }}/assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/noscript.css" /></noscript>
     {% if site.google_analytics and jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
@@ -25,12 +25,12 @@
 			<div id="wrapper">
 
 					<nav id="nav">
-						<a href="/#" class="icon solid fa-home {% if page.layout == 'post' %} inactive {% elsif page.layout == 'page' %} active {% endif %}"><span>Home</span></a>
-						<a href="/#work" class="icon solid fa-chart-bar"><span>Research</span></a>
-						<a href="/#aboutme" class="icon solid fa-user"><span>About me</span></a>
-            <a href="/#contact" class="icon solid fa-envelope"><span>Contact me</span></a>
+						<a href="#" class="icon solid fa-home"><span>Home</span></a> <!-- {% if page.layout == 'post' %} inactive {% elsif page.layout == 'page' %} active {% endif %}-->
+						<a href="#work" class="icon solid fa-chart-bar"><span>Research</span></a>
+						<a href="#aboutme" class="icon solid fa-user"><span>About me</span></a>
+            <a href="#contact" class="icon solid fa-envelope"><span>Contact me</span></a>
 						<!-- <a href="https://twitter.com/AstroShashank" class="icon brands fa-twitter"><span>Twitter</span></a> -->
-						<a href="/#blog" class="icon solid fa-blog {% if page.layout == 'post' %} active {% else %} inactive {% endif %}"><span>Blog</span></a>
+						<a href="#blog" class="icon solid fa-blog"><span>Blog</span></a>  <!--{% if page.layout == 'post' %} active {% else %} inactive {% endif %}-->
 					</nav>
 				<!-- Main -->
 					<div id="main">
@@ -61,12 +61,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
-			<script src="{{ site.url }}/assets/js/browser.min.js"></script>
-			<script src="{{ site.url }}/assets/js/timeline_height.js"></script>
-			<script src="{{ site.url }}/assets/js/breakpoints.min.js"></script>
-			<script src="{{ site.url }}/assets/js/util.js"></script>
-			<script src="{{ site.url }}/assets/js/main.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/browser.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/sticky_nav_bar.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/timeline_height.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/breakpoints.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/util.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
 
 

@@ -1837,11 +1837,31 @@ input, select, textarea {
 
 /* Nav */
 
-	#nav {
-		text-align: center;
-		height: 4.25em;
-		cursor: default;
-	}
+		.sticky_nav{
+			position: fixed;
+				top: 0;
+			/*background: #2b5876;*/
+			background: url("images/bg.jpg");
+			position: fixed;
+			z-index: 3;
+			width: 100%;
+		}
+
+		.nav_span_sticky{
+			top: 4em !important;
+		}
+
+		.nav_span_sticky::after{
+			bottom: 2.2em !important;
+			border-top: none !important;
+			border-bottom: solid 0.6em #222222 !important;
+		}
+
+			#nav {
+				text-align: center;
+				height: 4.25em;
+				cursor: default;
+			}
 
 		#nav a {
 			position: relative;
@@ -1933,6 +1953,11 @@ input, select, textarea {
 					 border-bottom-width: 0.5em;
 
 				}
+				/* To remove the bottom arrow when navbar is stickied*/
+
+		#nav a.active_no_arrow {
+			opacity: 1.0;
+		}
 
 		@media screen and (max-width: 980px) {
 
