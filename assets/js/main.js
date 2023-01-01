@@ -78,7 +78,7 @@
 						.hide();
 
 				// Activate link.
-					$link
+					 $link
 						.addClass('active');
 
 				// Reset scroll.
