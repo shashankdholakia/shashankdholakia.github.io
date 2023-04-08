@@ -28,9 +28,13 @@ Larger telescope have finer Airy patterns, and so can resolve finer details. The
 
 ## More than one aperture:
 
-Bigger is always better when it comes to telescopes. But, from above, we can actually calculate the size of the telescope we'd need to be able to resolve details on a given star. A relatively nearby, bright star observable with the unaided eye might span 1 milliarcsecond in diameter (where 1 degree --> 60 arcminutes--> 60 arcseconds --> 1000 milliarcseconds). To resolve such a star using visible light, we'd need a telescope with a diameter well over 100 meters! Our largest telescopes today are about 10 meters in diameter, so we are very far from being able to resolve even nearby stars with the largest telescopes! 
+Bigger is always better when it comes to telescopes. But, from above, we can actually calculate the size of the telescope we'd need to be able to resolve details on a given star. A relatively nearby, bright star observable with the unaided eye might span 1 milliarcsecond in diameter (where 1 degree --> 60 arcminutes--> 60 arcseconds --> 1000 milliarcseconds). To resolve such a star using visible light, we'd need a telescope with a diameter well over 100 meters! Our largest telescopes today are about 10 meters in diameter, so we are very far from being able to resolve even nearby stars with the largest telescopes! Perhaps with an OWL (Overwhelmingly Large Telescope), we could do this, but certainly not in the forseeable future.
 
-Interferometry posits another way of achieving such high resolutions using manageably sized telescopes. Let's suppose we had two 1 meter telescopes spaced apart, and we sent the beams of light from each telescope through a tube to meet at a camera in the middle. What would we see? The animation below shows that, instead of just seeing the Airy patterns of two 1 meter telescopes superimposed on each other, we see fringes that grow increasingly closely spaced as we increase the baseline separation between the two telescopes. 
+Interferometry posits another way of achieving such high resolutions using manageably sized telescopes, with some tradeoffs. Let's suppose we had two 1 meter telescopes spaced apart, and we sent the beams of light from each telescope through a tube to meet at a camera sensor in the middle. What would we see? The animation below shows that, as we smoothly transition from a single OWL telescope to two small telescopes, we see fringes that grow increasingly closely spaced as we increase the separation between the two telescopes. When the separation of our telescopes reaches the diameter of the OWL telescope, the fringes are so finely spaced they are comparable to the Airy pattern on an OWL telescope.
 
 <p align="center"><img src="{{ site.baseurl }}/images/interferometry/filled_aperture_to_michelson.gif" width="100%"/></p>
+
+Seeing a fringe pattern like this presents its drawbacks though--although there is maybe some information of what's in the sky, we don't really see a traditional image like we would expect. 
+
+## Making sense of the fringes:
 
