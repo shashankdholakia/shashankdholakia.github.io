@@ -11,6 +11,8 @@ For a long time I've been meaning to use this blog as a way of explaining my ong
 
 So far my PhD focus has meandered through some different roads, but they all have led to a somewhat common destination: looking to map the surfaces of stars and planets, especially looking at what we can learn about them from detailed observations of their rotation. So I've been aiming to measure the shapes and even surface features on stars to see evidence of rotation. Even the most nearby stars are incredibly far away. This means that stars from our perspective are *tiny*--in fact it's usually safe to assume stars are virtually point-like sources of light. However, in trying to push the magnifications achievable and actually resolve the surfaces of stars, it's hard to beat an interferometer. An interferometer is a combination of several individual telescopes that tries to achieve the resolving power, or magnification, of a single telescope, often much larger than would be feasible to build. 
 
+A note before I start: I will try not to delve into the wave nature of light and *why* it produces interference patterns here that it does. Astronomers may be familar with patterns like the Airy disk, and physicists might be more familiar with interference fringes. I'll take it as a given that these patterns are produced because I want to focus on how we use the shapes of these interference patterns to our advantage, but I plan to write a prequel explainer on why we get these patterns to begin with. 
+
 ## The resolution limit:
 
 To understand how an interferometer works, we must first understand how a regular telescope works, and explore a fundamental limit to the amount we can magnify with a given telescope. 
