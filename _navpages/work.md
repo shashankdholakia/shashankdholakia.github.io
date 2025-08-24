@@ -5,12 +5,7 @@ idname: work
 ---
 
 
-My research broadly focuses on exoplanets and their host stars.
-I like to use techniques such as photometry, spectroscopy and polarimetry
-in new ways to characterize exoplanet systems in detail.
-Currently I am interested in hot stars with exoplanets,
-which exhibit a variety of effects such as gravity darkening,
-oblateness and pulsations, which can all be used to learn more about exoplanets around these stars.
+My research focuses on developing techniques to map the surfaces and structures of stars and exoplanets. Recently, I have been building analytic, differentiable models for photometric, spectroscopic, and interferometric observations, and working towards a suite of open-source JAX software packages [[1](https://github.com/shashankdholakia/harmonix), [2](https://github.com/shishirdholakia/eclipsoid), [3](https://github.com/shashankdholakia/sdholakia_2024a), [4](https://github.com/exoplanet-dev/jaxoplanet)] implementing them. I apply these models to high-precision data from instruments such as JWST and CHARA to create detailed surface maps and to investigate how rotation and tides deform stars and planets.
 
 
 
